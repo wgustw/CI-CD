@@ -20,3 +20,7 @@ def test_task_not_found():
     client = app.test_client()
     response = client.put("/tasks/999")
     assert response.status_code == 404
+
+def test_que_vai_falhar():
+    # Teste proposital com erro para demonstrar bloqueio de merge
+    assert 1 == 2
