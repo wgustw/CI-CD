@@ -7,7 +7,7 @@ tasks = []
 
 @app.route("/")
 def home():
-    return jsonify({"mensagem": "TaskFlow API ativa"})
+    return jsonify({"mensagem": "TaskFlow API - Ciclo CI/CD completo!"})
 
 @app.route("/tasks", methods=["POST"])
 def create_task():
