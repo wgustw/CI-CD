@@ -6,9 +6,9 @@ app = Flask(__name__)
 def home():
     return {"mensagem": "API funcionando corretamente"}
 
-if __name__ == "__main__":
-    app.run(debug=True)
-
 @app.route("/status")
 def status():
     return {"status": "API online"}
+
+if __name__ == "__main__":
+    app.run(debug=True)
