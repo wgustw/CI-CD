@@ -1,26 +1,15 @@
-# CI-CD — Integração e Entrega Contínua
+# taskflow-api
 
-**Disciplina:** Integração e Entrega Contínua
-**Professor:** Wellington Roque
-**Curso:** DSM – 4º Semestre
+Projeto desenvolvido na disciplina de Integração e Entrega Contínua.  
+Professor: Wellington Roque | Curso: DSM – 4º Semestre
 
----
-
-## Estrutura do Repositório
-
-Este repositório contém as atividades práticas da disciplina, organizadas em branches por aula:
+## Branches por Aula
 
 | Branch | Conteúdo |
 |--------|----------|
-| `aula01` | Git do Zero – Estrutura inicial Flask, commits semânticos |
-| `aula02` | Branches e Pull Requests – Feature branch, merge, conflitos |
-| `aula03` | GitHub Actions – Pipeline CI com Flask |
-| `aula04` | Testes com Pytest – Integração completa com CI |
-| `aula05` | Branch Protegida – CI obrigatória para merge |
-| `aula06` | Deploy no Render – Ciclo completo CI/CD |
-
----
-
-## Projeto: taskflow-api
-
-API Flask desenvolvida ao longo das aulas para demonstrar o ciclo completo de CI/CD.
+| `aula01` | Git do Zero – commits semânticos, estrutura inicial |
+| `aula02` | Branches e Pull Requests |
+| `aula03` | GitHub Actions – Pipeline CI |
+| `aula04` | Testes com Pytest integrados ao CI |
+| `aula05` | Branch Protegida – CI obrigatória |
+| `aula06` | Deploy no Render – ciclo completo CI/CD |
