@@ -20,3 +20,11 @@ def test_task_not_found():
     client = app.test_client()
     response = client.put("/tasks/999")
     assert response.status_code == 404
+
+def test_update_task():
+    client = app.test_client()
+    client.post("/tasks", json={"titulo": "Tarefa para atualizar"})
+    response = client.put("/tasks/1")
+    assert response.status_code == 200
+    data = response.get_json()
+    assert data["concluida"] == True
