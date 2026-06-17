@@ -20,3 +20,7 @@ def test_task_not_found():
     client = app.test_client()
     response = client.put("/tasks/999")
     assert response.status_code == 404
+
+def test_nova_rota_com_erro():
+    # Teste com erro proposital para demonstrar bloqueio de CI
+    assert 1 == 2, "Erro proposital - CI deve bloquear este merge"
